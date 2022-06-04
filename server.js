@@ -71,9 +71,13 @@ app.get('/', (request, response)=>{
     response.sendFile(__dirname + '/index.html')
 })
 
+app.get('/api', (request, response)=>{
+    response.json(planets)
+})
+
 app.get('/api/:planetName', (request, response)=>{
     const planetsName = request.params.planetName.toLowerCase()
-    // if/else to check if alien name is in database
+    // if/else to check if planet name is in database
     if(planets[planetsName]){
         response.json(planets[planetsName])
     } else {
