@@ -1,8 +1,3 @@
-
-
-
-ideas: each planet in database can have an array of facts (should each fact be its own object?). Facts can be pulled at random depending on the planet being viewed.
-
 # Henry's Space Odyssey Planets API
 Henry's Space Odyssey Planets API is an educational API that currently contains facts and information about the planets within our solar system
 
